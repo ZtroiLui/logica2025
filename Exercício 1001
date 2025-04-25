@@ -7,7 +7,7 @@ int main() {
  
  X = A + B;
  
- printf("X = %i", X);
+ printf("X = %i\n", X);
  
  
     return 0;
