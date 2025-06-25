@@ -4,12 +4,13 @@
 using namespace std;
 
 bool verifica(int m[value][value], int li, int co){
+    bool p = false, g = false, b = false;
         for(int j = 0; j < value; j++){
             if(m[li][j] == m[li][co]){
                 return false;
             }
             else{
-                bool g = true;
+                g = true;
             }
         }
         for(int i = 0; i < value; i++){
@@ -17,19 +18,18 @@ bool verifica(int m[value][value], int li, int co){
                 return false;
             }
             else{
-                bool p = true;
+                p = true;
             }
         }
          for(int linhassudoku = 0; linhassudoku < 9; linhassudoku += 3) {
         for(int colusudoku = 0; colusudoku < 9; colusudoku += 3) {
             for(int i = linhassudoku; i < linhassudoku + 3; i++) {
-                for(int j = colusudoku; j < colusudoku + 3; j++) {
-                    int num = m[i][j];
-                    if(num[i][j] == m[li][co]) {
+                for(int j = colusudoku; j < colusudoku + 3; j++){
+                    if(m[i][j] == m[li][co]) {
                         return false;
                     }
                     else{
-                        bool b = true;
+                        b = true;
                     }
                 }
             }
