@@ -9,6 +9,5 @@ int main() {
  
   printf("X = %i\n", X);
  
- 
   return 0;
 }
