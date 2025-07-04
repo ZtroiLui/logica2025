@@ -9,6 +9,5 @@ int main() {
 
  printf("A=%.4lf\n", A);
 
-
-    return 0;
+ return 0;
 }
